@@ -9,80 +9,23 @@
 </head>
 <body>
     <div class="pageContainer">
-        <div class="langBtns">
-            <button class="en active" onclick="changeLayout('en', event)">English</button>
-            <button class="ar" onclick="changeLayout('ar', event)">العربية</button>
-        </div>
         <div class="layoutsContainer">
             <div class="logoContainer">
                 <a href="index.html">
                     <img src="./assets/img/logo.png" alt="Andorra Village" class="logo">
                 </a>
             </div>
-            <div class="en enLayout layout active">
-
-                <div class="loginLayout enLoginLayout en">
-                    <div class="terms">
-                        <h2>Terms & Conditions</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto quod magni ex, debitis delectus nesciunt dicta temporibus accusamus iure nihil</p>
-                        <h3>Subtitle 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cupiditate facilis beatae explicabo assumenda dolores tempore sapiente itaque? Est nobis recusandae a eum ullam harum provident nulla, nihil, vitae sapiente voluptatibus! Ratione exercitationem deserunt reiciendis quaerat accusamus. Veniam officiis, perspiciatis obcaecati voluptas omnis fugit minima, laboriosam nemo enim quam adipisci.</p>
-                        <h3>Subtitle 2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, deserunt</p>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptatem</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia tempore, tempora maxime ea veritatis explicabo</li>
-                            <li>Lorem ipsum dolor sit amet</li>
-                        </ul>
-                        <h3>Subtitle 3</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi natus ullam sit voluptas, maxime, dolorem labore doloremque doloribus exercitationem harum ex, ab necessitatibus culpa tenetur!</p>
-                        <ol>
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Lorem ipsum dolor sit amet consectetur</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia tempore, tempora maxime ea veritatis explicabo</li>
-                        </ol>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, corporis commodi maiores in, laborum accusantium pariatur eaque at quis sint voluptatem eligendi omnis ullam provident impedit, dignissimos molestiae quia sunt? Mollitia saepe aliquid animi veniam quod error eveniet modi tempora.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magnam assumenda ipsam.</p>
-                    </div>
-                    <h4>
-                        I hereby agree to the above Terms & Conditions, By Selecting the below options
-                    </h4>
-                    <!-- options (Walk-in Guests / In-house Guests) -->
-                    <div class="optionsContainer">
-                        <button onclick="walikInForm('en')">WALK-IN<br>GUESTS</button>
-                        <button onclick="InHouseForm('en')">IN-HOUSE<br>GUESTS</button>
-                    </div>
-                </div>
-
-                <div class="formLayout enFormLayoutWalkIn">
-                    <form action="">
-                        <div class="fieldContainer">
-                            <label for="userName">Name</label>
-                            <input type="text" placeholder="Name" name="userName" id="userName" required>
-                        </div>
-                        <div class="fieldContainer">
-                            <label for="userEmail">Email</label>
-                            <input type="email" placeholder="Email" name="userEmail" id="userEmail" required>
-                        </div>
-                        <div class="fieldContainer">
-                            <label for="userMobile">Mobile</label>
-                            <input type="phone" placeholder="Mobile" name="userMobile" id="userMobile" required>
-                        </div>
-                        <div class="submitBtn">
-                            <button type="submit">LOGIN</button>
-                        </div>
-                    </form>
-                </div>
+            <div class="en enLayout layout">
 
                 <div class="formLayout enFormLayoutInHouse">
                     <form action="">
                         <div class="fieldContainer">
-                            <label for="userName">Name</label>
-                            <input type="text" placeholder="Name" name="userName" id="userName" required>
+                            <label for="userName">Username</label>
+                            <input type="text" placeholder="Username" name="userName" id="userName" required>
                         </div>
                         <div class="fieldContainer">
-                            <label for="userRoom">Room Number</label>
-                            <input type="text" placeholder="Room Number" name="userRoom" id="userRoom" required>
+                            <label for="userRoom">Password</label>
+                            <input type="password" placeholder="Password" name="userPassword" id="userPassword" required>
                         </div>
                         <div class="submitBtn">
                             <button type="submit">LOGIN</button>
@@ -93,110 +36,7 @@
                     <small>&copy; All rights reserved. Andorra Village 2021</small>
                 </footer>
             </div>
-            <div class="ar arLayout layout">
-
-                <div class="loginLayout arLoginLayout ar">
-                    <div class="terms">
-                        <h2>البنود و الظروف</h2>
-                        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء</p>
-                        <h3>عنوان 1</h3>
-                        <p>العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج</p>
-                        <h3>عنوان 2</h3>
-                        <p>تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج</p>
-                        <ul>
-                            <li>العديد من برامح النشر المكتبي وبرامح</li>
-                            <li>العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج</li>
-                            <li>تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج</li>
-                        </ul>
-                        <h3>عنوان 3</h3>
-                        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
-                        <ol>
-                            <li>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل</li>
-                            <li>هناك حقيقة توى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</li>
-                            <li>عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</li>
-                        </ol>
-                        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
-                        <p>الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
-                    </div>
-                    <h4>
-                        أوافق بموجبه على الشروط والأحكام المذكورة أعلاه ، من خلال تحديد الخيارات أدناه
-                    </h4>
-                    <!-- options (Walk-in Guests / In-house Guests) -->
-                    <div class="optionsContainer">
-                        <button onclick="walikInForm('ar')">دخــــول<br>الزائريــن</button>
-                        <button onclick="InHouseForm('ar')">دخــــول<br>النُــــزلاء</button>
-                    </div>
-                </div>
-
-                <div class="formLayout arFormLayoutWalkIn ar">
-                    <form action="">
-                        <div class="fieldContainer">
-                            <label for="userName">الأسم</label>
-                            <input type="text" placeholder="الأسم" name="userName" id="userName" required>
-                        </div>
-                        <div class="fieldContainer">
-                            <label for="userEmail">البريد الإلكتروني</label>
-                            <input type="email" placeholder="البريد الإلكتروني" name="userEmail" id="userEmail" required>
-                        </div>
-                        <div class="fieldContainer">
-                            <label for="userMobile">رقم الهاتف</label>
-                            <input type="phone" placeholder="رقم الهاتف" name="userMobile" id="userMobile" required>
-                        </div>
-                        <div class="submitBtn">
-                            <button type="submit">دخــــول</button>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="formLayout arFormLayoutInHouse ar">
-                    <form action="">
-                        <div class="fieldContainer">
-                            <label for="username">الأسم</label>
-                            <input type="text" placeholder="الأسم" name="userName" id="userName" required>
-                        </div>
-                        <div class="fieldContainer">
-                            <label for="userRoom">رقم الغرفة</label>
-                            <input type="text" placeholder="رقم الغرفة" name="userRoom" id="userRoom" required>
-                        </div>
-                        <div class="submitBtn">
-                            <button type="submit">دخــــول</button>
-                        </div>
-                    </form>
-                </div>
-                
-                <footer>
-                    <small>&copy; جميع الحقوق محفوظة. Andorra Village 2021</small>
-                </footer>
-            </div>
         </div>
     </div>
-    
-    <script>
-        function changeLayout(lang, e){
-            document.querySelectorAll(`.formLayout`).forEach(layout => {
-                layout.classList.remove('active');
-            });
-            document.querySelectorAll(`.${lang}LoginLayout`).forEach(layout => layout.classList.remove('hidden'));
-            document.querySelectorAll('.layout').forEach(layout => layout.classList.remove('active'));
-            const targetLayout = document.querySelector(`.${lang}Layout`);
-            targetLayout.classList.add('active');
-
-            document.querySelectorAll('.langBtns button').forEach(langBtn => langBtn.classList.remove('active'));
-            e.target.classList.add('active');
-        }
-        function walikInForm(lang){
-            document.querySelectorAll(`.formLayout`).forEach(layout => layout.classList.remove('active'));
-            const targetLayout = document.querySelector(`.${lang}FormLayoutWalkIn`);
-            targetLayout.classList.add('active');
-            document.querySelectorAll(`.${lang}LoginLayout`).forEach(layout => layout.classList.add('hidden'));
-        }
-        function InHouseForm(lang){
-            document.querySelectorAll(`.formLayout`).forEach(layout => layout.classList.remove('active'));
-            document.querySelector(`.${lang}LoginLayout`).classList.remove('active');
-            const targetLayout = document.querySelector(`.${lang}FormLayoutInHouse`);
-            targetLayout.classList.add('active');
-            document.querySelectorAll(`.${lang}LoginLayout`).forEach(layout => layout.classList.add('hidden'));
-        }
-    </script>
 </body>
 </html>

@@ -35,78 +35,36 @@ html{
     height: -webkit-fill-available;
 }
 body{
+    position: relative;
     min-height: 100vh;
     /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
+    background-image: url(./assets/img/bg.jpg);
+    z-index: 0;
 }
+/* body:after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 33, 33, 0.5);
+    mix-blend-mode: lighten(50%);
+    z-index: 1;
+} */
 
 .en{
     font-family: 'NunitoSans', sans-serif!important;
     font-weight: 400;
 }
-.ar{
-    font-family: 'Tajawal', sans-serif!important;
-    font-weight: 500;
-    direction: rtl;
-}
-.ar p,
-.ar h3,
-.ar h4,
-.ar ul,
-.ar ul li,
-.ar ol,
-.ar ol li
-.ar input:not([type=email]){
-    text-align: right;
-    direction: rtl;
-}
 
 .pageContainer{
     position: relative;
     /* height: 100vh; */
-    
+    padding: 10vh 0;
+    z-index: 2;
 
-}
-.langBtns{
-    width: 100%;
-    max-width: 960px;
-    margin:0 auto;
-    padding: 2em 2em;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-    height:10%;
-}
-
-.langBtns button{
-    border: 1px solid var(--goldLight);
-    /* padding: 12px 24px; */
-    height: 40px;
-    width: 80px;
-    background: var(--white);
-    color: var(--black);
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 0.8;
-    box-shadow: 1px 3px 6px rgb(163, 105, 75, 0.2);
-}
-.langBtns button.ar{
-    font-size: 16px;
-}
-.langBtns button.active{
-    background: var(--goldLight);
-    background: rgb(214,151,120);
-    background: linear-gradient(225deg, rgba(214,151,120,1) 0%, rgba(163,105,75,1) 100%);
-    font-weight: 600;
-    color: var(--white);
-    box-shadow: 0px 0px 0px rgb(163, 105, 75, 0);
-}
-.langBtns button:first-of-type{
-    border-radius: 5px 0 0 5px;
-}
-.langBtns button:last-of-type{
-    border-radius: 0 5px 5px 0;
 }
 
 
@@ -114,29 +72,29 @@ body{
 
 /* LOGIN LAYOUT */
 .layoutsContainer{
-    width: 100%;
+    width: 90%;
     max-width: 960px;
     margin:0 auto;
-    height: 90%;
-    padding: 2em;
+    height: 600px;
+    padding: 1em 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgba(0,0,0,0.8);
 }
 .layoutsContainer .logoContainer{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2em;
-    height:20vh;
+    margin-bottom: 0em;
 }
 .layoutsContainer .logoContainer a {
     text-align: center;
 }
 .layoutsContainer .logoContainer a img{
-    max-height: 180px;
+    max-height: 160px;
     max-width: 220px;
 }
 
@@ -144,112 +102,9 @@ body{
     width: 100%;
     max-width: 960px;
     overflow: hidden;
-    display: none;
-}
-.layoutsContainer .layout.active{
     display: block;
 }
 
-.layoutsContainer .layout .loginLayout{
-    display: block;
-}
-.layoutsContainer .layout .loginLayout.hidden{
-    display: none;
-}
-.layoutsContainer .layout .terms{
-    width: 100%;
-    padding: 2em 1em;
-    border: 1px solid var(--goldLight);
-    height: 50vh;
-    overflow-y: auto;
-    line-height: 1.6;
-}
-
-.layoutsContainer .layout .terms h2{
-    margin-bottom: 1em;
-    text-align: center;
-    font-size: 24px;
-}
-.layoutsContainer .layout .terms h3{
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    font-size: 20px;
-}
-.layoutsContainer .layout.ar .terms h2{
-    font-size: 25px;
-}
-.layoutsContainer .layout.ar .terms h3{
-    font-size: 21px;
-}
-
-.layoutsContainer .layout .terms ul,
-.layoutsContainer .layout .terms ol{
-    width: 90%;
-    margin-left: 10%;
-    margin-bottom: 1em;
-}
-.layoutsContainer .layout.ar .terms ul,
-.layoutsContainer .layout.ar .terms ol{
-    margin-left: 0;
-    margin-right: 10%;
-}
-
-.layoutsContainer .layout .terms li{
-    font-size: 14px;
-}
-.layoutsContainer .layout.ar .terms li{
-    font-size: 15px;
-}
-
-.layoutsContainer .layout .terms p{
-    margin-bottom: 1em;
-    font-size: 14px;
-}
-.layoutsContainer .layout.ar .terms p{
-    font-size: 15px;
-}
-
-.layoutsContainer .layout h4{
-    text-align: center;
-    padding: 1em 1em 0;
-    font-size: 16px;
-    line-height: 1.6;
-}
-.layoutsContainer .layout.ar h4{
-    font-size: 17px;
-}
-
-.layoutsContainer .layout .optionsContainer{
-    width: 100%;
-    padding: 1em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.layoutsContainer .layout .optionsContainer button{
-    margin:1em;
-    width: 140px;
-    height: 100px;
-    background: var(--goldDark);
-    background: rgb(214,151,120);
-    background: linear-gradient(225deg, rgba(214,151,120,1) 0%, rgba(163,105,75,1) 100%);
-    color: var(--white);
-    font-size: 16px;
-    font-weight: 600;
-    padding: 0.5em;
-    line-height: 1.6;
-    font-family: 'NunitoSans', sans-serif!important;
-    box-shadow: 1px 3px 6px rgb(163, 105, 75, 0.2);
-    border-radius: 5px;
-    letter-spacing: 0.5px;
-    border: 1px solid var(--goldLight);
-}
-.layoutsContainer .layout.ar .optionsContainer button{
-    font-size: 17px;
-    font-weight: 600;
-    font-family: 'Tajawal', sans-serif!important;
-}
 
 
 
@@ -258,14 +113,11 @@ body{
 .formLayout{
     width: 100%;
     /* border: 1px solid var(--goldLight); */
-    padding: 2em 1em;
-    display: none;
+    padding: 1em 1em;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.formLayout.active{
-    display: flex;
 }
 .formLayout form{
     width: 70vw;
@@ -283,7 +135,7 @@ body{
 }
 .formLayout form .fieldContainer label{
     margin-bottom: 0.5em;
-    color: var(--goldDark);
+    color: var(--goldLight);
     width:100%;
 }
 .formLayout form .fieldContainer input{
@@ -342,6 +194,9 @@ footer{
     justify-content: center;
     align-items: center;
     margin-top: 4em;
+    font-size: 14px;
+    color: var(--goldLight);
+    text-align: center;
     /* padding: 1em; */
 }
 
